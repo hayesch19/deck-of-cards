@@ -1,14 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head lang="en">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Deck Of Cards</title>
-    <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" href="/screen.css">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="/screen.css" />
   </head>
   <body>
-    <h1 class='hello-world'></h1>
+    <section class="header">
+      <section class="test">
+        <h1>All Cards on Deck</h1>
+        <h2>Card Shuffler</h2>
+      </section>
+      <section>
+        <button class="shuffle-cards">Shuffle Deck</button>
+        <button class="draw-card">Draw Card</button>
+      </section>
+    </section>
+    <section class="players-hands"></section>
+    <section>
+      <h2>Player 1</h2>
+      <p class="drawn-card"></p>
+    </section>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
