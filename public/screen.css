@@ -40,4 +40,5 @@ button {
 /****** Classes ******/
 .players-hands {
   padding: 1rem;
+  flex-direction: row;
 }

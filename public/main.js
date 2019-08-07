@@ -41,12 +41,21 @@ const shuffleCards = () => {
   console.log(deck.pop())
 }
 // Drawing a Card
-const drawCard = () => {
+// Player 1 Draw
+const drawCardP1 = () => {
   const dealtCard = deck.pop()
   console.log(dealtCard)
   // Display Card
-  document.querySelector('.drawn-card').textContent = dealtCard
+  document.querySelector('.player-1-hand').textContent = dealtCard
+}
+// Player 2 Draw
+const drawCardP2 = () => {
+  const dealtCard = deck.pop()
+  console.log(dealtCard)
+  //Display Card
+  document.querySelector('.player-2-hand').textContent = dealtCard
 }
 document.querySelector('.shuffle-cards').addEventListener('click', makeDeck)
 document.querySelector('.shuffle-cards').addEventListener('click', shuffleCards)
-document.querySelector('.draw-card').addEventListener('click', drawCard)
+document.querySelector('.draw-card').addEventListener('click', drawCardP1)
+document.querySelector('.draw-card').addEventListener('click', drawCardP2)
